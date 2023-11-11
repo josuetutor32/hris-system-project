@@ -21,7 +21,7 @@
         <a href="register.php">Register</a>
     </form>
 
-    <script src="script.js"></script>
-    <script src="login.js"></script>
+    <script src="./script/script.js"></script>
+    <script src="./script/login.js"></script>
 </body>
 </html>

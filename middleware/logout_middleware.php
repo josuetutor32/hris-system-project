@@ -27,7 +27,9 @@
             'success' => true,
             'redirect' => 'login.php',
         ];
-    
+
+        
+        header("Location: login.php");
         header('Content-Type: application/json');
         echo json_encode($response);
         exit();

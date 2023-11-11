@@ -22,6 +22,6 @@
             </div>
         </div>
     </div>
-    <script src="logout.js"></script>
+    <script src="./script/logout.js"></script>
 </body>
 </html>
