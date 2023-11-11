@@ -1,0 +1,431 @@
+*, *::before, *::after {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    font-weight: bold;
+    font-family: monospace;
+}
+
+.main-container {
+    width: 100%;
+    position: relative;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    padding: 10px 50px;
+    color: white;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    background-image: linear-gradient(180deg, #4e54c8, #8f94fb);
+    background-repeat: no-repeat;
+}
+
+header div button {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+header div button:hover {
+    text-decoration: underline;
+}
+
+header div {
+    gap: .5rem;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+}
+
+header div input {
+    width: 300px;
+    height: 30px;
+    outline: none;
+    border: none;
+    margin-left: 50px;
+    padding: 0px 10px;
+    border-radius: .5rem;
+}
+
+header div img {
+    width: 30px;
+    height: 30px;
+}
+
+.menu-container {
+    width: 15%;
+    height: 100%;
+    display: flex;
+    padding: 30px 0px;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    position: absolute;
+    background-image: linear-gradient(180deg, #4e54c8, #8f94fb);
+    background-repeat: no-repeat;
+}
+
+.menu-container div {
+    width: 100%;
+    display: flex;
+    padding: 0px 0px 0px 30px;
+    align-content: center;
+    justify-content: center;
+    transition: all .5s ease-in;
+}
+
+.menu-container div button {
+    color: white;
+    width: 100%;
+    height: 30px;
+    outline: none;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+    font-size: 12px;
+    background-color: transparent;
+}
+
+.menu-container div button a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu-container div button::before {
+    content: "\f007";
+    width: 15px;
+    height: 15px;
+    margin-right: 8px;
+}
+
+.menu-container div:hover {
+    background-color: rgba(255, 255, 255, 0.196);
+}
+
+#registrationForm, #loginForm {
+    gap: 1rem;
+    width: 30vw;
+    height: auto;
+    margin: 5% auto;
+    padding: 40px 20px;
+    display: flex;
+    text-align: start;
+    border-radius: 1rem;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 0px 5px 15px 5px rgb(128, 128, 128);
+}
+
+#registrationForm input, #loginForm input {
+    width: 50%;
+    height: 40px;
+    padding: 10px 10px;
+    border: none;
+    outline: none;
+    color: rgb(25, 24, 24) !important;
+    background: none;
+    transition: all .5s ease-in;
+    border-bottom: 1px solid gray !important;
+    font-weight: bold;
+    font-family: monospace;
+}
+
+#registrationForm input:hover, #loginForm input:hover {
+    width: 60%;
+    border-bottom: 1px solid orange !important;
+}
+
+#registrationForm button, #loginForm button {
+    color: white;
+    width: 50%;
+    height: 40px;
+    padding: 10px 10px;
+    border: none;
+    outline: none;
+    transition: all .5s ease-in;
+    background-color: orange;
+    font-weight: bold;
+    font-family: monospace;
+}
+
+#registrationForm label, #loginForm label {
+    text-align: start;
+}
+
+#registrationForm button:hover, #loginForm button:hover {
+    color: black;
+    width: 60%;
+    border-radius: .5rem;
+    background-color: transparent;
+    border: 1px solid orange !important;
+}
+
+#registrationForm select {
+    width: 50%;
+    border: none;
+    outline: none;
+    text-align: start;
+    font-weight: bold;
+    font-family: monospace;
+}
+
+.admin-main-content {
+    gap: 1rem;
+    right: 0;
+    width: 85%;
+    height: auto;
+    display: flex;
+    padding: 50px 0px;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    position: absolute;
+}
+
+.users-data {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.users-data table {
+    width: 100%;
+    text-align: center;
+}
+
+.member-wrapper {
+    width: 80%;
+}
+
+.add-new-button-container {
+    gap: 1rem;
+    width: 100%;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: start;
+    background-color: rgba(0, 0, 0, 0.164)
+}
+
+.add-new-button-container button {
+    height: 100%;
+    outline: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 8px 15px;
+    border-radius: .3rem;
+    transition: all .3s ease-in;
+    border: 1px solid #4e54c8;
+    box-shadow: 0px 2px 15px 2px #4e54c87b;
+    background-image: linear-gradient(180deg, #4e54c8, #8f94fb);
+    background-repeat: no-repeat;
+}
+
+.add-new-button-container button a {
+    color: white;
+    text-decoration: none;
+}
+
+.add-new-button-container button:hover {
+    box-shadow: 0px 2px 15px 2px #4e54c8;
+}
+
+th {
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+th, td {
+    width: 25%;
+    padding: 10px;
+    color: #5d61aa;
+    text-align: left;
+    font-weight: bold;
+}
+
+.admin-main-content h1, h2 {
+    color: rgba(0, 0, 0, 0.113);
+    font-size: 30px;
+    animation-name: heading;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    transition: all 1s ease-in;
+}
+
+@keyframes heading {
+    0% { color: rgba(0, 0, 0, 0.113); }
+    50% { color: rgba(0, 0, 0, 0.481); }
+    100% { color: rgba(0, 0, 0, 0.113); }
+
+}
+
+.admin-wrapper-content {
+    gap: 1rem;
+    width: auto;
+    display: flex;
+    padding: 10px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.admin-wrapper-content div {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    color: rgb(188, 188, 188);
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.admin-wrapper-content .profileImage-wrapper {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    color: rgb(188, 188, 188);
+    align-items: center;
+    justify-content: center;
+    border-radius: .5rem;
+    cursor: pointer;
+    overflow: hidden;
+    box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.489);
+    transition: all .5s ease-in-out;
+}
+.profileImage-wrapper img {
+    max-width: 100%;
+    height: 100%;
+}
+.admin-wrapper-content .profileImage-wrapper:hover {
+    box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.737);
+}
+
+.admin-data-wrapper {
+    gap: .5rem;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+    border: 1px solid rgba(128, 128, 128, 0.501) !important;
+}
+
+.admin-data-wrapper div {
+    gap: 1rem;
+    width: 100%;
+    display: flex;
+    padding: 10px;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.data-wrapper div {
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: row;
+    border-radius: .5rem;
+}
+
+.data-wrapper div h3:last-child {
+    padding: 10px;
+    border-radius: .3rem;
+    background-color: #e7e7ef;
+}
+
+.data-wrapper div img {
+    width: 100px;
+}
+
+.add-form {
+    gap: .5rem;
+    display: flex;
+    padding: 40px 20px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+}
+
+.add-form div {
+    width: 100%;
+    display: flex;
+    text-align: start;
+    align-items: start;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.add-form div:last-child {
+    text-align: start;
+    align-items: end;
+    margin-top: 10px;
+    justify-content: END;
+}
+
+.add-form div input {
+    width: 20vw;
+    height: 40px;
+    color: gray;
+    outline: none;
+    padding: 0px 8px;
+    border-radius: .5rem;
+    font-family: monospace;
+    background-color: transparent;
+    border: 1px solid rgb(124, 124, 124) !important;
+}
+
+.add-form button {
+    width: 20vw;
+    height: 40px;
+    outline: none;
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: .5rem;
+    background-color: orange;
+    transition: all .5s ease-in;
+}
+
+.add-form button:hover {
+    background-color: orangered;
+}
+
+.add-form div label {
+    padding: 0%;
+    margin: 0%;
+    color: gray;
+    text-align: start;
+    font-family: monospace;
+}
+
+.add-form div label::after {
+    content: "*";
+    color: red;
+}
+
+.diplay-all-users {
+    width: 85%;
+    right: 0;
+    position: absolute;
+}
+
+
